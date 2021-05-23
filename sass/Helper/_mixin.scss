@@ -1,0 +1,29 @@
+@mixin styleLi($pd-y, $pd-x, $bd-radius,$border){
+    display: inline-block;
+    padding: $pd-y  $pd-x;
+    border-radius: $bd-radius;
+    border:$border;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+@mixin styleA($color, $fs,$fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin hoverLi($bg-color){
+    background-color: $bg-color;
+}
+
+@mixin button($mgTop, $bgColor, $color, $bdRadius, $pd-y, $pd-x,$fw){
+    margin-top: $mgTop;
+    background-color: $bgColor;
+    color: $color;
+    border-radius: $bdRadius;
+    padding: $pd-y $pd-x;
+    font-weight: $fw;
+    border: none;
+    outline: none;
+}

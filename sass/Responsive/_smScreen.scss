@@ -1,0 +1,209 @@
+@media screen and (max-width: 768px) {
+    .line {
+        left: 39%;
+    }
+    //header
+    header {
+        .header__content {
+            width: 80%;
+            .myNav {
+                a {
+                    color: white;
+                    margin-left: $margin-8;
+                }
+                button {
+                    background-color: $color-orange-0;
+                }
+                .navbar-nav {
+                    .activeHeader{
+                        a{
+                            color: $color-orange-0;
+                        }
+                    }
+                    margin-top: $margin-2;
+                    border-top: 2px solid $color-orange-0;
+                    a {
+                        color: $color-white-0;
+                        :hover {
+                            color: $color-orange-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Banner
+    .banner {
+        .banner__content {
+            width: 80%;
+            margin: 0 auto;
+            h1,
+            span {
+                font-size: $font-size-4 + 5;
+            }
+            p {
+                font-size: $font-size-1 + 2;
+            }
+        }
+    }
+
+    // About
+    .about {
+        .about__content {
+            width: 80%;
+            .about__item {
+                .personal__img{
+                    img{
+                        height: 130%;
+                        bottom: 0%;
+                        left: 20%;
+                    }
+                }
+                .about__right {
+                    .about__right__detail {
+                        .about__item__info {
+                            p {
+                                margin-top: $margin-2;
+                            }
+                            span {
+                                &:after {
+                                    width: 310px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Skills
+    .skills {
+        .skills__content {
+            .title__content {
+                h1 {
+                    font-size: $font-size-4 + 5;
+                }
+            }
+        }
+    }
+
+    // portfolio
+    .portfolio {
+        .portfolio__content {
+            width: 100%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-4 + 5;
+                }
+            }
+            .showcase__content {
+                .view {
+                    img {
+                        height: 400px;
+                    }
+                    .content {
+                        width: 400px;
+                        top: 11%;
+                        left: 16%;
+                        h2 {
+                            font-size: $font-size-2 - 1;
+                            padding: 0;
+                            margin: $margin-0;
+                        }
+                        ul{
+                            li{
+                                margin: 0 ;
+                                &:first-child{
+                                    margin-top: $margin-10 + 1;
+                                }
+                            }
+                        }
+                        span {
+                            // font-size: 14px;
+                        }
+                        p {
+                            font-size: $font-size-0;
+                        }
+                    }
+
+                    .demo__button {
+                        ul {
+                            li {
+                                padding: 5px 15px;
+                                i{
+                                    margin-top: $margin-0 - 7;
+                                    font-size: $font-size-1 + 2;
+                                }
+                                span{
+                                    font-size: $font-size-0 - 3;
+                                }
+                            }
+                        }
+                    }
+
+                    .gitHub__button {
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                padding: 7px 15px;
+                                i{
+                                    margin-top: $margin-0 - 7;
+                                    font-size: $font-size-1 + 2;
+                                }
+                                span{
+                                    font-size: $font-size-0 - 3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //contact
+    .contact {
+        .contact__content {
+            width: 80%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-4 + 5;
+                }
+                p {
+                    width: 80%;
+                }
+            }
+
+            .contact__info{
+                .contact__detail{
+                    .contact__item{
+                        min-width: 400px
+                    }   
+                }
+            }
+
+            .contact__form {
+                form {
+                    .submit__button {
+                        padding: $padding-0 - 3 $padding-1;
+                    }
+                }
+            }
+        }
+    }
+
+
+     // back to top
+     .backToTop{
+        right: 15px;
+        i{
+            font-size: $font-size-2 - 1;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}

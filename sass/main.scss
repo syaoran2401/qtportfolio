@@ -1,0 +1,37 @@
+
+// HELPERS
+@import './Helper/variable';
+@import './Helper/mixin';
+@import './Helper/extend';
+
+// VENDORS
+
+// BASE
+@import './Base/reset';
+@import './Base/customize';
+
+//LAYOUTS
+@import './Layouts/header';
+@import './Layouts/banner';
+@import './Layouts/about';
+@import './Layouts/skill';
+@import './Layouts/portfolio';
+@import './Layouts/contact';
+@import './Layouts/footer';
+@import './Layouts/backToTop';
+//COMPOENTS
+
+@import './Component/loader';
+//PAGES
+
+//THEME
+
+
+// RESPONSIVE
+@import './Responsive/_xlScreen.scss';
+@import './Responsive/_lgScreen.scss';
+@import './Responsive/_mdScreen.scss';
+@import './Responsive/_smScreen.scss';
+@import './Responsive/_xsScreen.scss';
+@import './Responsive/pixel2Screen';
+

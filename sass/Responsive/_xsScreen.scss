@@ -1,0 +1,216 @@
+@media screen and (max-width: 576px) {
+    .line {
+        left: 38%;
+    }
+    //Header
+    header {
+        .header__content {
+            width: 100%;
+            .myNav {
+                a {
+                    color: white;
+                    margin-left: $margin-8;
+                }
+                button {
+                    background-color: $color-orange-0;
+                }
+
+                .navbar-collapse {
+                    width: 90%;
+                    .navbar-nav {
+                        margin-top: $margin-2;
+                        border-top: 2px solid $color-orange-0;
+                        .activeHeader {
+                            a {
+                                color: $color-orange-0;
+                            }
+                        }
+                        a {
+                            color: $color-white-0;
+                            :hover {
+                                color: $color-orange-0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Banner
+    .banner {
+        .banner__content {
+            width: 80%;
+            margin: 0 auto;
+            h1,
+            span {
+                font-size: $font-size-4;
+            }
+            p {
+                font-size: $font-size-1;
+            }
+        }
+    }
+
+    // About
+    .about {
+        .title__content {
+            width: 100%;
+            h1 {
+                font-size: $font-size-4;
+            }
+        }
+        .about__content {
+            .about__item {
+                .personal__img {
+                    img {
+                        height: 138%;
+                        bottom: -13%;
+                        left: 11%;
+                    }
+                }
+                .about__right {
+                    p {
+                        margin-top: $margin-2;
+                    }
+                }
+            }
+        }
+    }
+
+    //skills
+    .skills {
+        .skills__content {
+            width: 90%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-4;
+                }
+            }
+        }
+    }
+
+    // portfolio
+    .portfolio {
+        .portfolio__content {
+            width: 100%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-4;
+                }
+            }
+            .showcase__content {
+                .view {
+                    img {
+                        height: 400px;
+                    }
+                    .content {
+                        width: 310px;
+                        top: 20%;
+                        left: 11%;
+                        h2 {
+                            font-size: $font-size-2 - 1;
+                            padding: 0;
+                            margin: $margin-0;
+                        }
+                        ul{
+                            li{
+                                margin: 0 ;
+                                &:first-child{
+                                    margin-top: $margin-10;
+                                }
+                            }
+                        }
+                        span {
+                            font-size: $font-size-0 - 2;
+                        }
+                        p {
+                            font-size: $font-size-0 - 4;
+                        }
+                    }
+
+                    .demo__button {
+                        ul {
+                            li {
+                                padding: $padding-9 $padding-10;
+                                i {
+                                    font-size: $font-size-1 + 2;
+                                    margin-top: $margin-0 - 7;
+                                }
+                                a {
+                                    margin-left: $margin-10 - 0.5;
+                                    font-size: $font-size-0 - 4;
+                                }
+                                span {
+                                    font-size: $font-size-0 - 5;
+                                }
+                            }
+                        }
+                    }
+
+                    .gitHub__button {
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                padding: $padding-9 + 2 $padding-10;
+                                i {
+                                    font-size: $font-size-1 + 2;
+                                    margin-top: $margin-0 - 7;
+                                }
+                                a {
+                                    margin-left: $margin-10 - 0.5;
+                                    font-size: $font-size-0 - 4;
+                                }
+                                span {
+                                    font-size: $font-size-0 - 5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //contact
+    .contact {
+        .contact__content {
+            width: 90%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-4;
+                }
+                p {
+                    width: 80%;
+                }
+            }
+
+            .contact__info {
+                .contact__detail {
+                    .contact__item {
+                        min-width: 310px;
+                    }
+                }
+            }
+            .contact__form {
+                form {
+                    .submit__button {
+                        padding: $padding-0 - 5 $padding-7 + 2;
+                    }
+                }
+            }
+        }
+    }
+
+    // back to top
+    .backToTop {
+        right: 15px;
+        i {
+            font-size: $font-size-1 + 2;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}

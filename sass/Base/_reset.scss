@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    font-weight: normal;
+    color:$color-gray-0;
+    line-height: $line-height-0;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none !important;
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    margin-bottom: $margin-2 + 4 ;
+}

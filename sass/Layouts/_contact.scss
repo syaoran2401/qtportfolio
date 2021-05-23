@@ -1,0 +1,95 @@
+.contact{
+    background-color: $bg-black-color-1;
+    .contact__content{
+        width: 60%;
+        margin: 0 auto;
+        padding: $padding-5 0;
+        .title__content{
+            text-align: center;
+            padding-bottom: $padding-6;
+            span{
+                color:$color-orange-0;
+            }
+            h1{
+                font-size: $font-size-3;
+                font-weight: $font-weight-bold;
+            }
+            p{
+                line-height: 30px;
+                margin: $margin-3 auto;
+                width: 50%;
+            }
+        }
+
+
+        .contact__info{
+            .contact__detail{
+                background-color:$bg-black-color-0;
+                padding: 0 $padding-0 - 3;
+                .icon{
+                    i{
+                        font-size: $font-size-2 + 4;
+                        color: $color-orange-0;
+                    }
+                }
+                .contact__item{
+                    min-width: 270px;
+                    height: 125px;
+                    padding: $padding-7 + 2 $padding-1;
+                    p {
+                        text-align: left;
+                        &:first-child{
+                            font-weight: $font-weight-bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact__form{
+            form{
+                .form-group{
+                    position: relative;
+                    .form__input{
+                        background-color: $bg-black-color-1;
+                        color: $color-white-0;
+                        height: 55px;
+                        border-radius: $border-radius-4;
+                        &:focus{
+                            outline:none;
+                            border:2px solid $color-orange-0;
+                            box-shadow: none;
+                       
+                        }
+                    }
+                    .form__label{
+                        position: absolute;
+                        top: 15px;
+                        left: 45px;
+                        background-color: $bg-black-color-1;;
+                        border: none;
+                    }
+                    #message{
+                        height: 200px;
+                        background-color: $bg-black-color-1;
+                        color: $color-white-0;
+                        width: 100%;
+                        padding: $padding-1 $padding-12;
+                        resize: none;
+                        border-radius: $border-radius-4;
+                        &:focus{
+                            outline:none;
+                            border: 2px solid $color-orange-0;
+                            box-shadow: none;
+
+                        }
+                    }
+                }
+
+                .submit__button{
+                    @include button($margin-2, $color-orange-0,$color-white-0,$border-radius-2,$padding-7, $padding-8,$font-weight-bold)
+                }
+            }
+        }
+    }
+}

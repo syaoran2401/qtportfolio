@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- OWL CAROUSEL -->
+
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>My Portfolio </title>
+</head>
+
+<body>
+
+    <div id="loading">
+        <img id="loading-image" src="/img/loader.gif" alt="Loading..." />
+    </div>
+
+    <div class="page-wrapper">
+        <!-- HEADER -->
+        <header>
+            <div class="header__content">
+                <nav class="navbar navbar-expand-md myNav">
+                    <a class="navbar-brand" href="#">
+                        <img id='home__logo' src="./img/logo1.png" alt="logo">
+                        <img id='active__logo' src="./img/logo-active.png" alt="logo gif">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <div class="navbar__icon__line"></div>
+                            <div class="navbar__icon__line"></div>
+                            <div class="navbar__icon__line"></div>
+                        </span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto" id="mainNav">
+                            <li class="nav-item mx-3 activeHeader sectionHome">
+                                <a class="nav-link" href="#banner">Home</a>
+                            </li>
+                            <li class="nav-item mx-3 sectionAbout">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item mx-3 sectionSkills">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item mx-3 sectionPortfolio">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item mx-3 sectionContact">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- BANNER -->
+        <section class="banner" id='banner'>
+            <div class="banner__content">
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-7 wow animate__animated animate__fadeInLeft">
+                        <ul class="d-flex list-unstyled social">
+                            <li class="mr-3"><a href="https://www.facebook.com/jackie.tran.9461" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li class="mx-3"><a href="https://twitter.com/MrSuperMan24" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="mx-3"><a href="https://github.com/syaoran2401" target="_blank"><i
+                                        class="fab fa-github"></i></a></li>
+                            <li class="mx-3"><a href="https://www.linkedin.com/in/quyen-tran-04a1811b5/"
+                                    target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+
+                        <h1>I am
+                            <span class="txt-rotate" data-period="500"
+                                data-rotate='[ "Quyen Tran", " a Front End Developer" ]'></span>
+                        </h1>
+                        <p class="mb-5">My passion is having an opportunity to learn new technology and learn new
+                            skills.
+                            Resposible to all my works and being patient with team members </p>
+
+                        <ul class="download__button">
+                            <li>
+                                <i class="fa fa-arrow-down"></i>
+                                <a class="ml-2" href="#">My Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12 col-lg-5 d-none d-lg-block home__img wow animate__animated animate__fadeInUp">
+                        <img src="img/me-svg1Size.png" alt="me">
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="scroll-link" href="#about">
+                <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130"
+                    preserveAspectRatio="xMidYMid meet">
+                    <g fill="none" fill-rule="evenodd">
+                        <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36" />
+                        <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF" />
+                    </g>
+                </svg>
+            </a>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id='about'>
+            <div class="about__content">
+                <div class="title__content wow animate__animated animate__fadeInDown">
+                    <h1>About <span>Me</span></h1>
+                    <div class="line wow"></div>
+                </div>
+
+                <div class="row about__item">
+                    <div class="col-12 col-lg-5 about__left wow animate__animated animate__fadeInLeft personal__img">
+                        <img src="./img/me-svg21.png" alt="me">
+                    </div>
+
+                    <div class="col-12 col-lg-7  about__right wow animate__animated animate__fadeInRight">
+                        <p class="about__intro pt-5">I learned front end development skills through the CyberSoft Online
+                            courses. Developing
+                            websites
+                            is my dream when i was a child. I am getting exciting whenever i joined a project</p>
+
+                        <div class="row about__right__detail">
+                            <div class="col-12 col-xl-6 ">
+                                <div class="about__item__info mt-4 text-nowrap">
+                                    <span class="about__icon"><i class="fa fa-user mr-2"></i> NAME:</span>
+                                    <span class="ml-3">Quyen Tran</span>
+                                </div>
+                                <div class="about__item__info mt-4 text-nowrap">
+                                    <span class="about__icon"><i class="fa fa-phone mr-2"></i> PHONE:</span>
+                                    <span class="ml-3">702-769-8886</span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-6">
+                                <div class="about__item__info mt-4 text-nowrap">
+                                    <span class="about__icon"><i class="fa fa-map-marker-alt mr-2"></i> ADDRESS:</span>
+                                    <span class="ml-3">3005 Piedmont Ave, Las Vegas NV</span>
+                                </div>
+                                <div class="about__item__info  mt-4 text-nowrap">
+                                    <span class="about__icon"><i class="fa fa-envelope mr-2"></i>E-MAIL</span>
+                                    <span class="ml-3">syaoran2401@yahoo.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
+            <div class="hero">
+                <div class="skills__content">
+                    <div class="title__content wow animate__animated animate__fadeInDown">
+                        <h1>My <span>Skills</span></h1>
+                        <div class="line mt-2 wow"></div>
+                    </div>
+
+                    <div class="row skills__detail">
+                        <div
+                            class="col-sm-12 col-md-6 col-xl-4 skill__item wow animate__animated animate__fadeInUp delay-1 ">
+                            <div class="skill__item__detail">
+                                <div class="py-5">
+                                    <h5 class="skill__title">HTML-CSS</h5>
+                                </div>
+                                <div class="row justify-content-around align-items-center text-center">
+                                    <div class="col-6 my-2">
+                                        <img src="./img/html5.png" alt="html">
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <img src="./img/css.png" alt="css">
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <img src="./img/sass.png" alt="sass">
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <div class="word__border">
+                                            <p>Responsive</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-sm-12 col-md-6 col-xl-4 skill__item wow animate__animated animate__fadeInUp delay-2 ">
+                            <div class="skill__item__detail">
+                                <div class="py-5">
+                                    <h5 class="skill__title">Javascript</h5>
+                                </div>
+                                <div class="row d-flex justify-content-around align-items-center text-center">
+                                    <div class="col-6 my-2">
+                                        <img src="./img/es5.png" alt="es5">
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <img src="./img/ES6.png" alt="es6">
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <img src="./img/ajax-icon.png" alt="ajax">
+                                    </div>
+                                    <div class="col-6 my-2">
+                                        <div class="word__border">
+                                            <p>OOP</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-sm-12 col-md-6 col-xl-4 skill__item wow animate__animated animate__fadeInUp delay-3 ">
+                            <div class="skill__item__detail">
+                                <div class="py-5">
+                                    <h5 class="skill__title">React JS</h5>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center text-center mb-3">
+                                    <img src="./img/react.png" alt="react">
+                                    <img src="./img/redux.png" alt="redux">
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center text-center">
+                                    <div class="word__border">
+                                        <p>React Hook</p>
+                                    </div>
+                                    <div class="word__border">
+                                        <p>Router</p>
+                                    </div>
+                                </div>
+                                <div class="word__border mx-auto my-3">
+                                    <p class="text-center">HOC</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-4 skill__item wow animate__animated animate__fadeInUp ">
+                            <div class="skill__item__detail">
+                                <div class="py-5">
+                                    <h5 class="skill__title">FramesWork</h5>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center text-center">
+                                    <img src="./img/bootstrap.png" alt="bootstrap">
+                                    <img src="./img/jquery.png" alt="jquery">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-4 skill__item wow animate__animated animate__fadeInUp ">
+                            <div class="skill__item__detail">
+                                <div class="py-5">
+                                    <h5 class="skill__title">Personal Skill</h5>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center text-center">
+                                    <div class="word__border">
+                                        <p>Team Work</p>
+                                    </div>
+                                    <div class="word__border">
+                                        <p>Self Study</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-4 skill__item wow animate__animated animate__fadeInUp ">
+                            <div class="skill__item__detail">
+                                <div class="py-5">
+                                    <h5 class="skill__title">Languages</h5>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center text-center">
+                                    <div class="word__border">
+                                        <p>English</p>
+                                    </div>
+                                    <div class="word__border">
+                                        <p>Vietnamese</p>
+                                    </div>
+                                </div>
+                                <div class="word__border text-center mx-auto mt-5">
+                                    <p class="m-auto">Chinese</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio" id='portfolio'>
+            <div class="portfolio__content">
+                <div class="title__content wow animate__animated animate__fadeInDown">
+                    <h1>Portfolio <span>Showcase</span></h1>
+                    <div class="line wow"></div>
+                </div>
+
+
+                <!-- SHOWCASE -->
+                <div class="showcase__content  wow animate__animated animate__flipInY">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="view">
+
+                                <div class="project-1 d-lg-block d-none">
+                                    <img src="./img/honda-project.png" alt="honda project">
+                                </div>
+                                <div class="project-1__responsive d-md-block d-lg-none">
+                                    <img src="./img/honda-res.png" alt="honda-res">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="mask"></div>
+
+                                <div class="content">
+                                    <h2>Honda Hompage</h2>
+                                    <ul>
+                                        <li>
+                                            <p class="d-inline"><span class="font-weight-bold">Description: </span> A
+                                                clone
+                                                UI of Honda with full responsive</p>
+                                        </li>
+                                        <li>
+                                            <p class="d-inline"><span class="font-weight-bold">Technology: </span>
+                                                HTML5,
+                                                CSS3, Bootstrap 4, SASS/SCSS, Jquery, Animate, Wowjs,
+                                                Swiper</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="container mt-">
+                                        <div class="row ">
+                                            <div class="col-6 ">
+                                                <div class="demo__button d-flex justify-content-end">
+                                                    <ul>
+                                                        <li class="d-flex">
+                                                            <a href="https://honda-projectqt.herokuapp.com/index.html"
+                                                                class="d-flex" target="_blank">
+                                                                <i class="fa fa-play"></i>
+                                                                <span class="text-white ml-2">Demo</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="gitHub__button d-flex justify-content-start">
+                                                    <ul>
+                                                        <li class="d-flex">
+                                                            <a href="https://github.com/syaoran2401/Honda-Project"
+                                                                class="d-flex" target="_blank">
+                                                                <i class="fab fa-github"></i>
+                                                                <span class="text-white ml-2 text-nowrap" href="#">Link
+                                                                    Github</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="view">
+                                <div class="project-2 d-lg-block d-none">
+                                    <img src="./img/udemy-project.png" alt="udemy project">
+                                </div>
+                                <div class="project-2__responsive d-md-block d-lg-none">
+                                    <img src="./img/udemy-res.png" alt="udemy-res">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="mask"></div>
+                                <div class="content">
+                                    <h2>UDEMY HOMEPAGE</h2>
+                                    <ul>
+                                        <li>
+                                            <p class="d-inline"><span class="font-weight-bold">Description: </span> A
+                                                clone
+                                                UI of udemy with dark theme</p>
+                                        </li>
+                                        <li>
+                                            <p class="d-inline"><span class="font-weight-bold">Technology: </span>
+                                                HTML5,
+                                                CSS3, Bootstrap 4, SASS/SCSS</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="container mt-">
+                                        <div class="row ">
+                                            <div class="col-6 ">
+                                                <div class="demo__button d-flex justify-content-end">
+                                                    <ul>
+                                                        <li class="d-flex">
+                                                            <a href="https://qtproject1.herokuapp.com/index.html"
+                                                                class="d-flex" target="_blank">
+                                                                <i class="fa fa-play"></i>
+                                                                <span class="text-white ml-2">Demo</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="gitHub__button">
+                                                    <ul>
+                                                        <li class="d-flex">
+                                                            <a href="https://github.com/syaoran2401/eLearningProject.git"
+                                                                class="d-flex" target="_blank">
+                                                                <i class="fab fa-github"></i>
+                                                                <span class="text-white ml-2 text-nowrap">Link
+                                                                    Github</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="view">
+                                <div class="project-3 ">
+                                    <img src="./img/mini-game.png" alt="mini game">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="mask"></div>
+                                <div class="content">
+                                    <h2>MINI GAME</h2>
+                                    <ul>
+                                        <li>
+                                            <p class="d-inline"><span class="font-weight-bold">Description: </span>Mini
+                                                game
+                                                build by React JS</p>
+                                        </li>
+                                        <li>
+                                            <p class="d-inline"><span class="font-weight-bold">Technology: </span>
+                                                HTML5,
+                                                CSS3, Bootstrap 4, React Js, Redux</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="container mt-">
+                                        <div class="row ">
+                                            <div class="col-6 ">
+                                                <div class="demo__button d-flex justify-content-end">
+                                                    <ul>
+                                                        <li class="d-flex">
+                                                            <a href="http://minigame.surge.sh"
+                                                                class="d-flex" target="_blank">
+                                                                <i class="fa fa-play"></i>
+                                                                <span class="text-white ml-2">Demo</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="gitHub__button">
+                                                    <ul>
+                                                        <li class="d-flex">
+                                                            <a href="https://github.com/syaoran2401/mini-game-qt.git"
+                                                                class="d-flex" target="_blank">
+                                                                <i class="fab fa-github"></i>
+                                                                <span class="text-white ml-2 text-nowrap">Link
+                                                                    Github</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="view">
+                                <div class="project-4 ">
+                                    <img src="./img/JiraClone.png" alt="JiraClone">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="mask"></div>
+                                <div class="content">
+                                    <h2>Jira Clone</h2>
+                                    <ul>
+                                        <li>
+                                            <p class="d-inline"><span class="font-weight-bold">Description: </span>Jira Clone app
+                                                build by React JS</p>
+                                        </li>
+                                        <li>
+                                            <p class="d-inline"><span class="font-weight-bold">Technology: </span>
+                                                HTML5,
+                                                CSS3, Bootstrap 4, React Js, Redux, HOC, Redux-saga , Ant Design</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="container mt-">
+                                        <div class="row ">
+                                            <div class="col-6 ">
+                                                <div class="demo__button d-flex justify-content-end">
+                                                    <ul>
+                                                        <li class="d-flex">
+                                                            <a href="http://jiracloneqt.surge.sh/"
+                                                                class="d-flex" target="_blank">
+                                                                <i class="fa fa-play"></i>
+                                                                <span class="text-white ml-2">Demo</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="gitHub__button">
+                                                    <ul>
+                                                        <li class="d-flex">
+                                                            <a href="https://github.com/syaoran2401/JiraClone.git"
+                                                                class="d-flex" target="_blank">
+                                                                <i class="fab fa-github"></i>
+                                                                <span class="text-white ml-2 text-nowrap">Link
+                                                                    Github</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id='contact'>
+            <div class="contact__content">
+
+                <div class="title__content wow animate__animated animate__fadeInDown">
+                    <span>HAVE ANY QUERY ? </span>
+                    <h1>Contact <span>Me</span></h1>
+                    <p>I appreaciate your valuable time for visiting my page. Feel free to send me messages. I hope we
+                        will
+                        have chace to work together
+                    </p>
+                    <div class="line wow"></div>
+                </div>
+
+                <div class='contact__info mb-5  wow animate__animated animate__lightSpeedInLeft'>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-4 mt-3">
+                            <div class="contact__detail d-flex justify-content-around align-items-center">
+                                <div class="icon mb-2 ml-5">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                </div>
+                                <div class='contact__item'>
+                                    <p>Location:</p>
+                                    <p>3005 Piedmont Ave, Las Vegas NV 89102</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-xl-4 mt-3">
+                            <div class="contact__detail d-flex justify-content-around align-items-center">
+                                <div class="icon mb-2 ml-5">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class='contact__item'>
+                                    <p>Phone:</p>
+                                    <p>702-769-8886</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4 mt-3">
+                            <div class="contact__detail d-flex justify-content-around align-items-center">
+                                <div class="icon mb-2 ml-5">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class='contact__item'>
+                                    <p>Email:</p>
+                                    <p>syaoran2401@yahoo.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__form wow animate__animated animate__lightSpeedInRight">
+                    <form method="get">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-12 col-xl-6  mb-xl-3 mb-5">
+                                    <input id='name' type="text" class="form-control form__input" required>
+                                    <label class="form__label name" for="name">Name</label>
+                                    <span class="text-danger errorName__message" style="display:none"></span>
+
+                                </div>
+                                <div class="col-12 col-xl-6 mb-xl-3 mb-4">
+                                    <input id="email" type="email" class="form-control form__input " required>
+                                    <label class="form__label email" for="email">Email</label>
+                                    <span class="text-danger errorEmail__message" style="display:none"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group  mb-5">
+                            <input id='subject' type="text" class="form-control form__input">
+                            <label class="form__label subject" for="subject">Subject</label>
+                        </div>
+                        <div class="form-group mb-1">
+                            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                            <label for="message" class="form__label message">Message</label>
+                        </div>
+                        <button class="submit__button">Send Message</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer__content">
+                <p>
+                    Copyright &#169 2020 by Tran Duoc Quyen
+                </p>
+            </div>
+        </footer>
+
+        <!-- Back to top -->
+        <a href="#" class="backToTop cd-top text-replace js-cd-top">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+    </div>
+
+
+    <!-- JQUERY -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+
+    <!-- POPPER -->
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <!-- WOW -->
+    <script src="./node_modules/wowjs/dist/wow.min.js"></script>
+
+    <!-- Back To Top -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main-backToTop.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

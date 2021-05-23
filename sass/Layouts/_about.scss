@@ -1,0 +1,62 @@
+.about {
+    background-color: $bg-black-color-0;
+    .about__content {
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        padding: $padding-5 0;
+        .title__content {
+            padding-bottom: $padding-6;
+        }
+        h1 {
+            text-align: center;
+            font-size: $font-size-3;
+            font-weight: $font-weight-bold;
+            span {
+                color: $color-orange-0;
+            }
+        }
+    }
+
+    .about__item {
+        .personal__img{
+            position: relative;
+            height: 40vh;
+            img {
+                position: absolute;
+                transform: rotateY(-10deg);
+                width: auto;
+                height: 160%;
+                bottom: -26%;
+                left: 15%;
+            }
+
+        }
+        .about__right {
+            .about__right__detail {
+                .about__icon {
+                    display: inline-block;
+                    width: 120px;
+                    padding: $padding-9 $padding-9 + 5;
+                    background-color: $color-orange-0;
+                    color: $color-white-0;
+                    border: 1px solid $color-orange-0;
+                    border-radius: 2px;
+                    margin-bottom: 0;
+                    &:after {
+                        content: "";
+                        height: 2px;
+                        width: 250px;
+                        left: 100%;
+                        top: 34px;
+                        position: absolute;
+                        background-color: $color-orange-0;
+                    }
+                }
+                span {
+                    position: relative;
+                }
+            }
+        }
+    }
+}
