@@ -1,5 +1,1 @@
-<?php
-
-include_once("new.html");
-
-?>
+<?php header ( 'Location: /index.html') ;  ?>
