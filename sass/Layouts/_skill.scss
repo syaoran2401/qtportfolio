@@ -1,0 +1,86 @@
+.skills {
+    background-color: $bg-black-color-1;
+    .skills__content {
+        width: 75%;
+        margin: 0 auto;
+        position: relative;
+        padding: $padding-5 0;
+        .title__content {
+            padding-bottom: $padding-6;
+            h1 {
+                text-align: center;
+                font-size: $font-size-3;
+                font-weight: $font-weight-bold;
+                span {
+                    color: $color-orange-0;
+                }
+            }
+        }
+        .skills__detail {
+            &:hover {
+                .skill__item {
+                    transition: all 0.5s;
+                    filter: blur(3px);
+                    transform: scale(0.9, 0.9);
+                }
+            }
+            .skill__item {
+                margin: $margin-2 0;
+                &:hover {
+                    filter: none;
+                    transform: scale(1, 1);
+                }
+                .skill__item__detail {
+                    height: 350px;
+                    background-color: $bg-black-color-0;
+                    padding: 0 $padding-1 + 5;
+                    border-radius: $border-radius-1;
+                    transition: all 0.5s;
+                    &:hover {
+                        background-color: $color-orange-0;
+                        img {
+                            animation: flip 1s linear;
+                        }
+                        .word__border {
+                            background: $bg-black-color-1;
+                            animation: flip 2s linear;
+                        }
+                        h5 {
+                            color:$color-black-0;
+                        }
+                    }
+                    .skill__title {
+                        font-size: $font-size-2 - 1;
+                        text-align: center;
+                    }
+                    img {
+                        width: 70px;
+                        height: 70px;
+                    }
+                    .word__border {
+                        border: 1px solid $color-black-0;
+                        border-radius: $border-radius-0;
+                        width: 120px;
+                        background: #1371ff7a;
+                    }
+                    h5 {
+                        font-weight: $font-weight-bold;
+                        color: $color-white-0;
+                    }
+                    p {
+                        color: $color-white-0;
+                        font-size: $font-size-1;
+                        margin: 0;
+                        padding: $padding-0 - 3 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(360deg);
+    }
+}

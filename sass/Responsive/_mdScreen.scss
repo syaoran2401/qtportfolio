@@ -1,0 +1,178 @@
+@media screen and (max-width: 992px) {
+    .line {
+        left: 42%;
+    }
+    //header
+    header {
+        .header__content {
+            width: 90%;
+            .myNav {
+                a {
+                    color: white;
+                }
+                button {
+                    background-color: $color-orange-0;
+                }
+                .navbar-nav {
+                    .activeHeader{
+                        a{
+                            color: $color-orange-0;
+                        }
+                    }
+                    a {
+                        margin: 0;
+                        color: $color-white-0;
+                        :hover {
+                            color: $color-orange-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Banner
+    .banner {
+        .banner__content {
+            width: 80%;
+            margin: 0 auto;
+            h1,
+            span {
+                font-size: $font-size-3 - 2;
+            }
+            p {
+                font-size: $font-size-1 + 2;
+            }
+        }
+    }
+
+    // About
+    .about {
+        .about__content {
+            width: 80%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-3 - 2;
+                }
+            }
+            .about__item {
+                .personal__img{
+                    img{
+                        height: 146%;
+                        bottom: -19%;
+                        left: 24%;
+                    }
+                }
+                .about__right {
+                    p {
+                        // font-size: $font-size-1 + 2;
+                    }
+                    .about__right__detail {
+                        p {
+                            // font-size: $font-size-1 + 2;
+                            margin-top: $margin-2;
+                        }
+                        span {
+                            &:after {
+                                width: 500px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // portfolio
+    .portfolio {
+        .portfolio__content {
+            width: 100%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-4 + 5;
+                }
+            }
+            .showcase__content {
+                .view {
+                    img {
+                        height: 400px;
+                    }
+                    .content {
+                        width: 500px;
+                        top: 12%;
+                        left: 16%;
+                        h2 {
+                            font-size: $font-size-2 - 1;
+                            padding: 0;
+                            margin: $margin-0;
+                        }
+                        span {
+                            font-size: $font-size-0;
+                        }
+                    }
+
+                    .demo__button {
+                        ul {
+                            li {
+                                padding: $padding-0 - 4 $padding-7 + 2;
+                            }
+                        }
+                    }
+
+                    .gitHub__button {
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                padding: $padding-0 - 3 $padding-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //contact
+    .contact {
+        .contact__content {
+            width: 90%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-4 + 5;
+                }
+                p {
+                    width: 80%;
+                }
+            }
+
+            .contact__info {
+                .contact__detail {
+                    .contact__item {
+                        min-width: 280px;
+                        padding: $padding-7 + 2  $padding-1;
+                    }
+                }
+            }
+
+            .contact__form {
+                form {
+                    .submit__button {
+                        padding: $padding-0 $padding-2;
+                    }
+                }
+            }
+        }
+    }
+
+    // back to top
+    .backToTop{
+        right: 25px;
+        i{
+            font-size: $font-size-2 - 1;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}

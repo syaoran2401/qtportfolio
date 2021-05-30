@@ -1,0 +1,162 @@
+@media screen and (max-width: 1280px) {
+    header {
+        .header__content {
+            width: 85%;
+            .navbar-nav {
+                li {
+                    a {
+                        margin: 0 ;
+                    }
+                }
+            }
+        }
+    }
+
+    // Banner
+    .banner {
+        .banner__content {
+            width: 70%;
+            margin: 0 auto;
+
+            span {
+                font-size: $font-size-4 + 5;
+            }
+            p {
+                font-size: $font-size-1 + 2;
+            }
+            .home__img {
+                height: 80vh;
+                img {
+                    animation: fadeIn 5s;
+                    width: auto;
+                    height: 780px;
+                    position: absolute;
+                    bottom: 10%;
+                    left: -55%;
+                }
+            }
+        }
+    }
+
+    //about
+    .about {
+        .about__content {
+            width: 80%;
+            .about__item {
+                .personal__img{
+                    img{
+                        height: 138%;
+                        bottom: -15%;
+                        left: 3%;
+                    }
+                }
+                .about__right {
+                    .about__intro {
+                        padding-top: 0 !important;
+                    }
+                    .about__right__detail {
+                        p {
+                            margin-top: $margin-2;
+                        }
+                        span {
+                            &:after {
+                                width: 155px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // portfolio
+    .portfolio {
+        .portfolio__content {
+            width: 100%;
+            .showcase__content {
+                .view {
+                    img {
+                        height: 500px;
+                    }
+                    .content {
+                        width: 620px;
+                        top: 22%;
+                        left: 20%;
+                        h2 {
+                            font-size: $font-size-5 + 5 ;
+                            padding: 0;
+                            margin: $margin-0;
+                        }
+                        ul{
+                            li{
+                                margin: $margin-0 0 ;
+                                &:first-child{
+                                    margin-top: $margin-10 + 1;
+                                }
+                            }
+                        }
+                        span {
+                            font-size: $font-size-2 - 1;
+                        }
+                        p {
+                            font-size: $font-size-1 + 2;
+                        }
+                    }
+
+                    // .demo__button {
+                    //     ul {
+                    //         li {
+                    //         }
+                    //     }
+                    // }
+
+                    .gitHub__button {
+                        ul {
+                            width: 80%;
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                padding: $padding-0 $padding-3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //contact
+    .contact {
+        .contact__content {
+            width: 90%;
+            .title__content {
+                h1 {
+                    font-size: $font-size-4 + 5;
+                }
+                p {
+                    width: 80%;
+                }
+            }
+
+            .contact__info {
+                .contact__detail {
+                    .contact__item {
+                        min-width: 345px;
+                        padding: $padding-7 + 2  $padding-1;
+                    }
+                }
+            }
+        }
+    }
+
+    .backToTop{
+        right: 45px;
+        i{
+            font-size: $font-size-2;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}
+

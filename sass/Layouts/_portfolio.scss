@@ -1,0 +1,172 @@
+.portfolio {
+
+    background-color: $bg-black-color-0;
+    .portfolio__content {
+        width: 75%;
+        margin: 0 auto;
+        padding: $padding-5 0;
+        .title__content {
+            padding-bottom: $padding-6;
+            text-align: center;
+            h1 {
+                font-size: $font-size-3;
+                font-weight: $font-weight-bold;
+                span {
+                    color: $color-orange-0;
+                }
+            }
+        }
+    }
+    .showcase__content {
+        width: 75%;
+        margin: 0 auto;
+        .view {
+            position: relative;
+            img {
+                display: block;
+                transition: all 0.2s ease-in;
+                width: 100%;
+                height: 700px;
+                position: relative;
+            }
+            .overlay{
+                content: '';
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+                background-color: black;
+                opacity: 0.2;
+            }
+            .mask {
+                background-color: rgba(115, 146, 184, 0.7);
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                transform: translate(0px, -750px);
+                transition: all 0.5s ease-in-out;
+            }
+            .content {
+                position: absolute;
+                background: rgba(248, 230, 230, 0.993);
+                top: 33%;
+                left: 22%;
+                min-width: 200px;
+                border: 5px solid $color-orange-0;
+                border-radius: $border-radius-1;
+                opacity: 0;
+                transition: all 1s;
+                h2 {
+                    color: black;
+                    opacity: 0;
+                    text-transform: uppercase;
+                    text-align: center;
+                    position: relative;
+                    padding: $padding-10;
+                    background: rgba(0, 0, 0, 0.8);
+                    margin: 20px 0;
+                    background: transparent;
+                    transform: translate(200px, -200px);
+                    transition: all 0.2s ease-in-out;
+                }
+                ul {
+                    li {
+                        &:before {
+                            content: "\2022";
+                            color: $color-orange-0;
+                            font-weight: $font-weight-bold;
+                            display: inline-block;
+                            width: 1rem;
+                            margin-left: -1rem;
+                        }
+                    }
+                    color: black;
+                    opacity: 0;
+                    position: relative;
+                    padding: 0 $padding-1;
+                    transform: translate(-200px, 200px);
+                    transition: all 0.2s ease-in-out;
+                }
+
+                .demo__button {
+                    ul {
+                        li {
+                            white-space: nowrap;
+                            &:before {
+                                content: "";
+                            }
+                            background-color: black;
+                            @include styleLi($padding-0, $padding-2, $border-radius-0, $border-2);
+                            i {
+                                color: $color-orange-0;
+                                font-size: $font-size-1;
+                            }
+                            p {
+                                @include styleA($color-white-0, $font-size-0, $font-weight-bold);
+                            }
+                            &:hover {
+                                @include hoverLi($color-orange-0);
+                                i {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .gitHub__button {
+                    ul {
+                        li {
+                            white-space: nowrap;
+                            &:before {
+                                content: "";
+                            }
+                            background-color: black;
+                            @include styleLi($padding-0, $padding-2, $border-radius-0, $border-2);
+                            i {
+                                color: $color-orange-0;
+                                font-size: $font-size-2 - 3;
+                            }
+                            span {
+                                @include styleA($color-white-0, $font-size-0, $font-weight-bold);
+                            }
+                            &:hover {
+                                @include hoverLi($color-orange-0);
+                                i {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .view {
+            &:hover {
+                .mask {
+                    opacity: 1;
+                    transform: translate(0, 0) ;
+                }
+                .content {
+                    opacity: 1;
+                    h2 {
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        transition-delay: 0.3s;
+                    }
+                    ul {
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        transition-delay: 0.4s;
+                    }
+                }
+            }
+        }
+    }
+}

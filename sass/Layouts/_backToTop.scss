@@ -1,0 +1,43 @@
+.backToTop{
+    position: fixed;
+    right: 80px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+    z-index: 15;
+    i{
+        border: 1px solid $color-orange-0;
+        border-radius: $border-radius-3;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;    
+        font-size: $font-size-5;
+        text-align: center;
+        color: orange;
+        transition: all .5s;
+        &:hover{
+            background-color: orange;
+            color: white;
+            animation: upAndDown 1s infinite;
+        }
+    }
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
