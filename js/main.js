@@ -1,4 +1,4 @@
-$(document).ready(function ($) {
+$(document).ready(function () {
 
   $('.scroll-link').click(function (e) {
     e.preventDefault()
